@@ -1,0 +1,24 @@
+{
+  "episode": "EP04",
+  "status": "RUNNING",
+  "backend": "QWEN_DIFFUSERS_INPAINT_PIPELINE",
+  "pipeline": "diffusers.QwenImageEditInpaintPipeline",
+  "model_path": "/Users/jingdong/.cache/modelscope/Qwen-Image-Edit-2511",
+  "python_environment": "/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf",
+  "input": "data/controlled_variants/product_defect_before.png",
+  "mask": "data/controlled_variants/defect_mask.png",
+  "mask_semantics": "white pixels are repainted; black pixels are preserved",
+  "input_sha256": "af39e087a44f3c5e25bef6e8f8487a65aca65a5f6624fdeb2d33de011fc8b1b6",
+  "mask_sha256": "4d0b26d4418c332d9ccc70a52527611dcadaae9bf704d41f97b45c9257fd00ae",
+  "parameters": {
+    "prompt": "Remove only the single red scratch inside the provided mask. Preserve the bottle silhouette, cap, label, product position, background, lighting, and every unrelated region. Do not add text or objects.",
+    "height": 512,
+    "width": 640,
+    "num_inference_steps": 8,
+    "true_cfg_scale": 4.0,
+    "strength": 0.9,
+    "seed": 8804
+  },
+  "cost": null,
+  "started_at_epoch": 1788620982.382561
+}

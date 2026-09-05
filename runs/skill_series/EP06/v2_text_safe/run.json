@@ -1,0 +1,26 @@
+{
+  "episode": "EP06",
+  "status": "CONTENT_USABLE",
+  "real_model_attempts": 1,
+  "raw_result": {
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "request_id": "real-bf016576-0482-446a-890c-7ae80713b4c0",
+    "timestamp": "2026-09-05T15:36:29.880653+00:00",
+    "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/model_input.png",
+    "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/model_output.png",
+    "instruction": "Transform this controlled text-safe cafe scene into a rainy cinematic night. Focus only on blue-hour/night lighting, rain, wet-road reflections, warm window glow, atmosphere, and filmic contrast. Preserve the exact building, yellow door, windows, storefront geometry, perspective, and framing. Do not generate new text. Do not rewrite or recreate storefront signage. Preserve the neutralized sign region.",
+    "mode": "skill_series_v2",
+    "mask_path": null,
+    "seed": 8606,
+    "latency_seconds": 508.876,
+    "cost": null,
+    "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/real-bf016576-0482-446a-890c-7ae80713b4c0.raw.json",
+    "success": true,
+    "error": null,
+    "mask_support": "NOT_APPLICABLE"
+  },
+  "original_photo_claim": false,
+  "output": "assets/skill_series/ep06/after_v2.png",
+  "deterministic_postprocess": "localized signage_restore_mask_refined restored from text-safe variant; output is not original-photo lineage"
+}

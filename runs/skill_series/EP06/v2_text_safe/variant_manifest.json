@@ -1,0 +1,15 @@
+{
+  "source_mother": "data/mother_cases/scene/scene_master_4x5.png",
+  "variant_path": "data/controlled_variants/scene_text_safe_before.png",
+  "mask_path": "data/controlled_variants/signage_mask.png",
+  "input_type": "CONTROLLED_DETERMINISTIC_TEXT_SAFE_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "method": "PIL Gaussian blur only in declared narrow storefront signage text band",
+  "geometry_preserved": [
+    "main building",
+    "yellow door",
+    "windows",
+    "perspective",
+    "framing"
+  ],
+  "not_original_photo": true
+}

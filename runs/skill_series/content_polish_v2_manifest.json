@@ -1,0 +1,86 @@
+{
+  "gate": "CONTENT_POLISH_V2",
+  "ep02_rerun": false,
+  "ep05_rerun": false,
+  "ep07_rerun": false,
+  "records": [
+    {
+      "episode": "EP01",
+      "status": "CONTENT_USABLE",
+      "real_model_attempts": 1,
+      "raw_result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-4aca5977-25f8-44ef-8077-e2e866c03850",
+        "timestamp": "2026-09-05T15:17:46.038577+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/model_output.png",
+        "instruction": "Convert this exact old cafe street photograph into a vintage travel poster. Preserve the same cafe identity, building geometry, yellow door, windows, perspective, and scene composition. Apply a faded warm vintage travel-poster palette, aged paper print, restrained grain, lithograph and screen-print texture, and strong visual hierarchy. ABSOLUTELY NO TEXT: do not generate text, letters, words, typography, captions, logos, labels, or storefront signage. Do not rewrite or interpret any existing sign. Return a completely text-free poster image.",
+        "mode": "skill_series_v2",
+        "mask_path": null,
+        "seed": 8201,
+        "latency_seconds": 505.627,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/real-4aca5977-25f8-44ef-8077-e2e866c03850.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "NOT_APPLICABLE"
+      },
+      "output": "assets/skill_series/ep01/after_v2.png",
+      "deterministic_postprocess": "deterministic textured blank fills plus PIL title OLD STREET CAFE; no model-generated typography"
+    },
+    {
+      "episode": "EP03",
+      "status": "CONTENT_USABLE",
+      "real_model_attempts": 1,
+      "raw_result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-3a333f12-93c4-4ef0-87ef-1d80539af15f",
+        "timestamp": "2026-09-05T15:27:56.434865+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/v2_targeted_second_pass/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/v2_targeted_second_pass/model_output.png",
+        "instruction": "This is the current output of a first-pass background cleanup. Perform only a targeted second pass on the four declared peripheral residual ghost regions: faint card/cable ghost at upper-left/lower-left and faint packaging/cup ghost at upper-right/lower-right. Remove residual traces and blend them into the existing peach background. Do not change the bottle, cap, label, position, silhouette, lighting, framing, or any central region. Do not add objects or text.",
+        "mode": "skill_series_v2",
+        "mask_path": null,
+        "seed": 8302,
+        "latency_seconds": 512.614,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/v2_targeted_second_pass/real-3a333f12-93c4-4ef0-87ef-1d80539af15f.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "NOT_APPLICABLE"
+      },
+      "qa_story": "first pass -> QA found residual -> one targeted second pass",
+      "output": "assets/skill_series/ep03/after_v2.png",
+      "deterministic_constraint": "only declared residual mask accepted a 25-percent blend of model pixels; all outside pixels copied from after_v1"
+    },
+    {
+      "episode": "EP06",
+      "status": "CONTENT_USABLE",
+      "real_model_attempts": 1,
+      "raw_result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-bf016576-0482-446a-890c-7ae80713b4c0",
+        "timestamp": "2026-09-05T15:36:29.880653+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/model_output.png",
+        "instruction": "Transform this controlled text-safe cafe scene into a rainy cinematic night. Focus only on blue-hour/night lighting, rain, wet-road reflections, warm window glow, atmosphere, and filmic contrast. Preserve the exact building, yellow door, windows, storefront geometry, perspective, and framing. Do not generate new text. Do not rewrite or recreate storefront signage. Preserve the neutralized sign region.",
+        "mode": "skill_series_v2",
+        "mask_path": null,
+        "seed": 8606,
+        "latency_seconds": 508.876,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/v2_text_safe/real-bf016576-0482-446a-890c-7ae80713b4c0.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "NOT_APPLICABLE"
+      },
+      "original_photo_claim": false,
+      "output": "assets/skill_series/ep06/after_v2.png",
+      "deterministic_postprocess": "localized signage_restore_mask_refined restored from text-safe variant; output is not original-photo lineage"
+    }
+  ],
+  "elapsed_seconds": 2.645
+}

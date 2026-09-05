@@ -14,3 +14,18 @@ Content QA: EP01 `PARTIAL`, EP03 `PARTIAL`, EP04 `FAIL`. EP02/EP05/EP06 were not
 `READY_FOR_EP07 = NO`
 
 EP07 remains stopped until the content QA decisions are accepted and the local-repair failure is either intentionally retained as a failure case or followed by an explicitly authorized next experiment. This is controlled content evidence, not a benchmark.
+
+## Content polish gate
+
+- EP01 v2: `CONTENT_USABLE`
+- EP03 second pass: `CONTENT_USABLE`
+- EP06 v2: `CONTENT_USABLE`
+- EP04 local repair backend: `LOCAL_REPAIR_BACKEND_BLOCKED`; original `FAIL` retained
+- EP02 and EP05 were not rerun
+- EP07 was not run
+
+`CONTENT_POLISH_GATE = PASS`
+
+`CONTENT_USABLE_COUNT = 5 / 6` (EP01, EP02, EP03, EP05, EP06)
+
+`READY_FOR_EP07 = NO` because this turn explicitly keeps EP07 stopped even though the 5/6 content threshold is now met.

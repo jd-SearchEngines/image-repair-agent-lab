@@ -1,0 +1,34 @@
+{
+  "episode": "EP04",
+  "status": "LOCAL_REPAIR_BACKEND_BLOCKED",
+  "backend": "QWEN_DIFFUSERS_INPAINT_PIPELINE",
+  "pipeline": "diffusers.QwenImageEditInpaintPipeline",
+  "model_path": "/Users/jingdong/.cache/modelscope/Qwen-Image-Edit-2511",
+  "python_environment": "/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf",
+  "input": "data/controlled_variants/product_defect_before.png",
+  "mask": "data/controlled_variants/defect_mask.png",
+  "mask_semantics": "white pixels are repainted; black pixels are preserved",
+  "input_sha256": "af39e087a44f3c5e25bef6e8f8487a65aca65a5f6624fdeb2d33de011fc8b1b6",
+  "mask_sha256": "4d0b26d4418c332d9ccc70a52527611dcadaae9bf704d41f97b45c9257fd00ae",
+  "parameters": {
+    "prompt": "Remove only the single red scratch inside the provided mask. Preserve the bottle silhouette, cap, label, product position, background, lighting, and every unrelated region. Do not add text or objects.",
+    "height": 512,
+    "width": 640,
+    "num_inference_steps": 8,
+    "true_cfg_scale": 4.0,
+    "strength": 0.9,
+    "seed": 8804
+  },
+  "cost": null,
+  "started_at_epoch": 1788620982.382561,
+  "versions": {
+    "diffusers": "0.40.0",
+    "torch": "2.13.0"
+  },
+  "device": "mps",
+  "success": false,
+  "error_type": "OSError",
+  "error": "Error no file named model.safetensors, or pytorch_model.bin, found in directory /Users/jingdong/.cache/modelscope/Qwen-Image-Edit-2511/text_encoder.",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/jingdong/Downloads/skill diff project/scripts/run_ep04_qwen_diffusers_inpaint_smoke.py\", line 90, in main\n    pipe = QwenImageEditInpaintPipeline.from_pretrained(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf/lib/python3.11/site-packages/diffusers/pipelines/pipeline_utils.py\", line 1064, in from_pretrained\n    loaded_sub_model = load_sub_model(\n                       ^^^^^^^^^^^^^^^\n  File \"/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf/lib/python3.11/site-packages/diffusers/pipelines/pipeline_loading_utils.py\", line 904, in load_sub_model\n    loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf/lib/python3.11/site-packages/transformers/modeling_utils.py\", line 4293, in from_pretrained\n    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jingdong/Downloads/Google_image/qa_judge_dpo/.venvs/sft-bench-hf/lib/python3.11/site-packages/transformers/modeling_utils.py\", line 629, in _get_resolved_checkpoint_files\n    raise OSError(\nOSError: Error no file named model.safetensors, or pytorch_model.bin, found in directory /Users/jingdong/.cache/modelscope/Qwen-Image-Edit-2511/text_encoder.\n",
+  "elapsed_seconds": 5.007
+}

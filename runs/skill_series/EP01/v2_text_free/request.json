@@ -1,0 +1,16 @@
+{
+  "episode": "EP01",
+  "skill": "Vintage Poster",
+  "skill_path": "skills/vintage_poster/SKILL_v2.md",
+  "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+  "deterministic_postprocess": "text_free_scrub_only_if_needed; no title added",
+  "reason_for_text_boundary": "move typography out of generative inference because v1 produced malformed poster text",
+  "input": "data/mother_cases/scene/scene_master_4x5.png",
+  "model_input": "runs/skill_series/EP01/v2_text_free/model_input.png",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "seed": 8201,
+  "attempt_budget": 1,
+  "attempt": 1,
+  "skill_version": "v2"
+}

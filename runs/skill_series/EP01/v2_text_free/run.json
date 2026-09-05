@@ -1,0 +1,25 @@
+{
+  "episode": "EP01",
+  "status": "CONTENT_USABLE",
+  "real_model_attempts": 1,
+  "raw_result": {
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "request_id": "real-4aca5977-25f8-44ef-8077-e2e866c03850",
+    "timestamp": "2026-09-05T15:17:46.038577+00:00",
+    "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/model_input.png",
+    "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/model_output.png",
+    "instruction": "Convert this exact old cafe street photograph into a vintage travel poster. Preserve the same cafe identity, building geometry, yellow door, windows, perspective, and scene composition. Apply a faded warm vintage travel-poster palette, aged paper print, restrained grain, lithograph and screen-print texture, and strong visual hierarchy. ABSOLUTELY NO TEXT: do not generate text, letters, words, typography, captions, logos, labels, or storefront signage. Do not rewrite or interpret any existing sign. Return a completely text-free poster image.",
+    "mode": "skill_series_v2",
+    "mask_path": null,
+    "seed": 8201,
+    "latency_seconds": 505.627,
+    "cost": null,
+    "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/v2_text_free/real-4aca5977-25f8-44ef-8077-e2e866c03850.raw.json",
+    "success": true,
+    "error": null,
+    "mask_support": "NOT_APPLICABLE"
+  },
+  "output": "assets/skill_series/ep01/after_v2.png",
+  "deterministic_postprocess": "deterministic textured blank fills plus PIL title OLD STREET CAFE; no model-generated typography"
+}

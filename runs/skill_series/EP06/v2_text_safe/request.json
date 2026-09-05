@@ -1,0 +1,31 @@
+{
+  "episode": "EP06",
+  "skill": "Cinematic Scene",
+  "skill_path": "skills/cinematic_scene/SKILL_v2.md",
+  "input_type": "CONTROLLED_DETERMINISTIC_TEXT_SAFE_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "mother": "Mother B / Scene Master",
+  "preprocess": {
+    "source_mother": "data/mother_cases/scene/scene_master_4x5.png",
+    "variant_path": "data/controlled_variants/scene_text_safe_before.png",
+    "mask_path": "data/controlled_variants/signage_mask.png",
+    "input_type": "CONTROLLED_DETERMINISTIC_TEXT_SAFE_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+    "method": "PIL Gaussian blur only in declared narrow storefront signage text band",
+    "geometry_preserved": [
+      "main building",
+      "yellow door",
+      "windows",
+      "perspective",
+      "framing"
+    ],
+    "not_original_photo": true
+  },
+  "deterministic_postprocess": "restore localized text-safe glyph mask from controlled input to prevent malformed text pollution",
+  "input": "data/controlled_variants/scene_text_safe_before.png",
+  "model_input": "runs/skill_series/EP06/v2_text_safe/model_input.png",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "seed": 8606,
+  "attempt_budget": 1,
+  "attempt": 1,
+  "skill_version": "v2"
+}

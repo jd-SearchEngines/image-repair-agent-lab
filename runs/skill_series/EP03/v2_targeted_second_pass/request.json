@@ -1,0 +1,44 @@
+{
+  "episode": "EP03",
+  "skill": "Background Cleanup",
+  "skill_path": "skills/background_cleanup/SKILL.md",
+  "input_type": "P1_AFTER_AS_SECOND_PASS_INPUT",
+  "pass": "second_pass",
+  "first_pass": "assets/skill_series/ep03/after.png",
+  "qa_finding": "faint residual ghosts remained after cleanup v1",
+  "declared_residual_regions": {
+    "upper_left_card_ghost": [
+      45,
+      650,
+      340,
+      900
+    ],
+    "lower_left_cable_ghost": [
+      35,
+      930,
+      360,
+      1285
+    ],
+    "upper_right_packaging_ghost": [
+      745,
+      650,
+      1035,
+      940
+    ],
+    "lower_right_cup_ghost": [
+      760,
+      930,
+      1040,
+      1265
+    ]
+  },
+  "deterministic_constraint": "composite model changes only within declared residual mask; bottle/cap/position/frame preserved",
+  "input": "assets/skill_series/ep03/after.png",
+  "model_input": "runs/skill_series/EP03/v2_targeted_second_pass/model_input.png",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "seed": 8302,
+  "attempt_budget": 1,
+  "attempt": 1,
+  "skill_version": "v2"
+}

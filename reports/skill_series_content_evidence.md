@@ -1,15 +1,31 @@
 # Same-series content evidence index
 
-This is `CONTENT DEMO / CONTROLLED EXPERIMENT` evidence, not a benchmark. EP02, EP05 and EP06 use the same Qwen Image Edit model and the locked Mother A/Mother B families. Human review and semantic judge are not run.
+This is `CONTENT DEMO / CONTROLLED EXPERIMENT` evidence, not a benchmark. The
+table distinguishes v1, v2, first pass, second pass, deterministic
+preprocessing/post-processing, and real-model output. EP02 and EP05 are locked
+and were not rerun. EP07 remains `NOT_RUN`.
 
-| EP | Mother Case | Input | Skill / version | Real Model | Before | After | Compare board | Best Run | Failed Run | What changed | What was preserved | Safe public claim | Unsafe claim | Caveat |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| EP02 | Mother A / Product Master | `runs/skill_series/EP02/before.png` | Hero Product v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep02/before.png` | `assets/skill_series/ep02/after.png` | `assets/skill_series/ep02/compare_board.png` | `attempt_01` | none recorded | studio light, depth, premium background | bottle remains recognizable | same product mother image, real model, different skill | production uplift, exact identity preservation | no human review; controlled source |
-| EP05 | Mother A / controlled text variant | `runs/skill_series/EP05/before.png` | Chinese Text Repair v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep05/before.png` | `assets/skill_series/ep05/after.png` | `assets/skill_series/ep05/compare_board.png` | `attempt_01` | none recorded | wrong `秋季新口上市` visibly becomes target-like `秋季新品上市` | product/background broadly remain | real model was asked to change only declared Chinese text | OCR correctness, text preservation, production readiness | OCR and human review required; fixed text crops: `assets/skill_series/ep05/zoom_before.png`, `assets/skill_series/ep05/zoom_after.png` |
-| EP06 | Mother B / Scene Master | `runs/skill_series/EP06/before.png` | Cinematic Scene v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep06/before.png` | `assets/skill_series/ep06/after.png` | `assets/skill_series/ep06/compare_board.png` | `attempt_01` | none recorded | daytime to rainy cinematic night, warm windows, reflections | storefront geometry and yellow door remain visibly related | same scene mother image, real model, different skill | building identity perfectly preserved, cinematic quality uplift percentage | no structural judge; controlled content demo |
-| EP01 | Mother B / Scene Master | `runs/skill_series/EP01/before.png` | Vintage Poster v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep01/before.png` | `assets/skill_series/ep01/after.png` | `assets/skill_series/ep01/compare_board.png` | 1; `attempt_01` | none | vintage travel-poster palette, grain, print texture | cafe facade, yellow door, windows, perspective broadly remain | real model clearly changes the scene into a poster style | clean poster typography, production readiness | PARTIAL; malformed generated text; see `reports/content_qa_ep01.md` |
-| EP03 | Mother A / Product Master controlled clutter variant | `runs/skill_series/EP03/before.png` | Background Cleanup v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep03/before.png` | `assets/skill_series/ep03/after.png` | `assets/skill_series/ep03/compare_board.png` | 1; `attempt_01` | none | four deterministic clutter objects mostly disappear | bottle, cap, position, framing broadly remain | real model reduces the declared clutter | strict cleanup, no residual ghosts, production readiness | PARTIAL; faint residual clutter; see `reports/content_qa_ep03.md` |
-| EP04 | Mother A / Product Master controlled scratch variant | `runs/skill_series/EP04/before.png` | Local Repair v1 | Qwen Image Edit 2511 8-bit | `assets/skill_series/ep04/before.png` | `assets/skill_series/ep04/after.png` | `assets/skill_series/ep04/compare_board.png` | 1; `attempt_01` | content failure, scratch remains | model output produced but declared scratch was not removed | bottle and framing broadly remain | real failed local-repair evidence with retained mask reference | successful local repair, mask correctness, production readiness | FAIL; `MASK_NOT_SUPPORTED`; see `reports/content_qa_ep04.md` |
-| EP07 | Mixed | NOT_RUN | Multi-Skill Agent | Qwen Image Edit 2511 8-bit | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | NOT_RUN | depends on preceding episode evidence |
+| Evidence | Mother / input lineage | Skill / pass | Real model call | Best comparison board | Status | Deterministic boundary and retained caveat |
+|---|---|---|---:|---|---|---|
+| EP01 v1 | Mother B / canonical scene | Vintage Poster v1 / first pass | 1 historical | `assets/skill_series/ep01/compare_board.png` | `PARTIAL` | Real model made the style change but generated malformed text; retained in `reports/content_qa_ep01.md`. |
+| EP01 v2 | Mother B / canonical scene | Vintage Poster v2 / one real pass | 1 new | `assets/skill_series/ep01/compare_board_v2.png` | `CONTENT_USABLE` | Prompt forbids all generated text. PIL deterministic textured blank zones plus optional `OLD STREET CAFE` title; raw model output retained under `runs/skill_series/EP01/v2_text_free/`. |
+| EP02 v1 | Mother A / product master | Hero Product v1 / first pass | 1 historical | `assets/skill_series/ep02/compare_board.png` | `CONTENT_USABLE` | Locked; not rerun. |
+| EP03 v1 | Mother A / deterministic clutter variant | Background Cleanup v1 / first pass | 1 historical | `assets/skill_series/ep03/compare_board.png` | `PARTIAL` | Four clutter objects mostly removed but faint ghosts remained; retained in `reports/content_qa_ep03.md`. |
+| EP03 v2 | EP03 v1 After as input | Background Cleanup / targeted second pass | 1 new | `assets/skill_series/ep03/final_compare_board.png` | `CONTENT_USABLE` | One Qwen second pass; feathered deterministic composite only in four declared residual regions. Bottle/cap/position/framing preserved from v1. |
+| EP04 v1 | Mother A / deterministic scratch variant | Local Repair v1 / first pass | 1 historical | `assets/skill_series/ep04/compare_board.png` | `FAIL` | Scratch remains; MFlux had `MASK_NOT_SUPPORTED`. Failure retained. |
+| EP04 backend gate | EP04 defect input + explicit mask | Qwen Diffusers inpaint backend / one smoke | 0 image inferences; 1 load attempt | `runs/skill_series/EP04/backend_smoke_qwen_diffusers/result.json` | `LOCAL_REPAIR_BACKEND_BLOCKED` | Pipeline exposes explicit `mask_image`, but local Qwen official text encoder is incomplete; failed before inference. No masked success claim. |
+| EP05 v1 | Mother A / deterministic text variant | Chinese Text Repair v1 / first pass | 1 historical | `assets/skill_series/ep05/compare_board.png` | `CONTENT_USABLE` | Locked; not rerun; OCR evidence retained. |
+| EP06 v1 | Mother B / canonical scene | Cinematic Scene v1 / first pass | 1 historical | `assets/skill_series/ep06/compare_board.png` | `CONTENT_UNUSABLE` | Cinematic change succeeded but malformed storefront text remained; retained. |
+| EP06 v2 | Mother B / deterministic text-safe variant | Cinematic Scene v2 / one real pass | 1 new | `assets/skill_series/ep06/compare_board_v2.png` | `CONTENT_USABLE` | PIL controlled variant and disclosed signage mask precede Qwen; deterministic restoration/blur prevents malformed sign text. Not the original-photo lineage. |
+| EP07 | Mixed | Multi-Skill Agent | 0 | `NOT_RUN` | `NOT_RUN` | Explicitly not run this turn. |
 
-Canonical provenance is under `data/mother_cases/*/provenance.json`. Per-episode request/result/raw metadata and run card are under `runs/skill_series/EP02`, `EP05`, and `EP06`.
+## Gate summary
+
+- New real Qwen MFlux image calls this turn: `3` (EP01 v2, EP03 second pass, EP06 v2), exactly one each.
+- EP04 backend smoke: `1` pipeline-load attempt, `0` image inferences; blocked before model inference.
+- `CONTENT_USABLE_COUNT = 5 / 6`: EP01, EP02, EP03, EP05, EP06.
+- `CONTENT_POLISH_GATE = PASS` for the three requested content repairs plus a resolved backend decision.
+- `READY_FOR_EP07 = NO`: the 5/6 threshold is met, but EP07 was explicitly prohibited in this turn.
+
+Canonical provenance is under `data/mother_cases/*/provenance.json`. Per-episode
+request/result/raw metadata and run artifacts are under `runs/skill_series/`.
