@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-8e59b50b-04a8-4a0d-bfbe-110d75003b32",
+  "timestamp": "2026-09-05T10:16:25.156821+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/model_input.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/model_output.png",
+  "instruction": "Remove only the four distracting objects around the skincare product: loose charging cable, small paper card, small cup, and packaging fragment. Keep the exact bottle, bottle position, cap, label, lighting, background character, and framing unchanged. Do not redesign the product or invent any text.",
+  "mode": "skill_series",
+  "mask_path": null,
+  "seed": 7100,
+  "latency_seconds": 372.075,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/real-8e59b50b-04a8-4a0d-bfbe-110d75003b32.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "NOT_APPLICABLE"
+}

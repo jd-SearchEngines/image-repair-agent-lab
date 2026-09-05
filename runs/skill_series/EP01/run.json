@@ -1,0 +1,43 @@
+{
+  "episode": "EP01",
+  "skill": "Vintage Poster",
+  "skill_version": "v1",
+  "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "success": true,
+  "attempts": 1,
+  "failed_attempts": [],
+  "best_attempt": "attempt_01",
+  "human_review": "NOT_RUN",
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+  "mask_support": "NOT_APPLICABLE",
+  "attempt_records": [
+    {
+      "attempt": 1,
+      "success": true,
+      "attempt_dir": "runs/skill_series/EP01/attempt_01",
+      "result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-ebad2edf-0854-4a6e-9754-22110b5216bc",
+        "timestamp": "2026-09-05T10:08:32.869868+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/attempt_01/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/attempt_01/model_output.png",
+        "instruction": "Convert this exact old cafe street photograph into a vintage travel poster. Keep the same cafe/storefront identity, yellow door, windows, main geometry, and perspective. Apply a faded warm palette, aged print texture, film grain, retro poster hierarchy, and screen-print lithograph feeling. Use no complex Chinese text; preferably add no text at all. Do not replace or redesign the building.",
+        "mode": "skill_series",
+        "mask_path": null,
+        "seed": 7100,
+        "latency_seconds": 471.147,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP01/attempt_01/real-ebad2edf-0854-4a6e-9754-22110b5216bc.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "NOT_APPLICABLE"
+      }
+    }
+  ],
+  "extra": {
+    "mother": "Mother B / Scene Master"
+  }
+}

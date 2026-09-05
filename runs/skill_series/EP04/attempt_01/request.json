@@ -1,0 +1,24 @@
+{
+  "episode": "EP04",
+  "family": "product",
+  "mother_case": "product_master_4x5.png",
+  "input_path": "runs/skill_series/EP04/before.png",
+  "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "skill": "Local Repair",
+  "skill_version": "v1",
+  "skill_path": "skills/local_repair/SKILL.md",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "prompt": "Remove only the single declared red scratch on the bottle body. Preserve the bottle silhouette, cap, label, product position, background, lighting, and every unrelated region. Do not change any other object or add text. The reference mask identifies the repair region, but the installed MFlux interface may not support an explicit mask argument.",
+  "attempt_budget": 2,
+  "attempt": 1,
+  "model_resolution": [
+    512,
+    640
+  ],
+  "content_resolution": [
+    1080,
+    1350
+  ],
+  "mask_reference": "data/controlled_variants/defect_mask.png"
+}

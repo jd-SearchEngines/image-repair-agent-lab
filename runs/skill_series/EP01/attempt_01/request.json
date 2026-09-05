@@ -1,0 +1,24 @@
+{
+  "episode": "EP01",
+  "family": "scene",
+  "mother_case": "scene_master_4x5.png",
+  "input_path": "runs/skill_series/EP01/before.png",
+  "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+  "skill": "Vintage Poster",
+  "skill_version": "v1",
+  "skill_path": "skills/vintage_poster/SKILL.md",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "prompt": "Convert this exact old cafe street photograph into a vintage travel poster. Keep the same cafe/storefront identity, yellow door, windows, main geometry, and perspective. Apply a faded warm palette, aged print texture, film grain, retro poster hierarchy, and screen-print lithograph feeling. Use no complex Chinese text; preferably add no text at all. Do not replace or redesign the building.",
+  "attempt_budget": 2,
+  "attempt": 1,
+  "model_resolution": [
+    512,
+    640
+  ],
+  "content_resolution": [
+    1080,
+    1350
+  ],
+  "mask_reference": null
+}

@@ -1,0 +1,71 @@
+{
+  "series": "AI修图 Skill 实验室",
+  "gate": "P1",
+  "same_model": "mlx-community/qwen-image-edit-2511-8bit",
+  "cases": [
+    {
+      "episode": "EP01",
+      "skill": "Vintage Poster",
+      "skill_version": "v1",
+      "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "success": true,
+      "attempts": 1,
+      "failed_attempts": [],
+      "best_attempt": "attempt_01",
+      "human_review": "NOT_RUN",
+      "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+      "mask_support": "NOT_APPLICABLE"
+    },
+    {
+      "episode": "EP03",
+      "skill": "Background Cleanup",
+      "skill_version": "v1",
+      "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "success": true,
+      "attempts": 1,
+      "failed_attempts": [],
+      "best_attempt": "attempt_01",
+      "human_review": "NOT_RUN",
+      "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+      "mask_support": "NOT_APPLICABLE"
+    },
+    {
+      "episode": "EP04",
+      "skill": "Local Repair",
+      "skill_version": "v1",
+      "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "success": true,
+      "attempts": 1,
+      "failed_attempts": [],
+      "best_attempt": "attempt_01",
+      "human_review": "NOT_RUN",
+      "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+      "mask_support": "MASK_NOT_SUPPORTED",
+      "mask_change_proxy": {
+        "inside_mask_change": 0.08373647928237915,
+        "outside_mask_change_proxy": 0.047631267458200455,
+        "interpretation": "mean RGB delta proxy only; not a quality score"
+      }
+    }
+  ],
+  "p0_untouched": true,
+  "content_status": {
+    "EP01": "PARTIAL",
+    "EP03": "PARTIAL",
+    "EP04": "FAIL"
+  },
+  "content_qa_reports": [
+    "reports/content_qa_ep01.md",
+    "reports/content_qa_ep03.md",
+    "reports/content_qa_ep04.md"
+  ],
+  "p1_content_gate": "PARTIAL",
+  "ready_for_ep07": "NO",
+  "human_review": "NOT_RUN"
+}

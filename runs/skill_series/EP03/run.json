@@ -1,0 +1,93 @@
+{
+  "episode": "EP03",
+  "skill": "Background Cleanup",
+  "skill_version": "v1",
+  "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "success": true,
+  "attempts": 1,
+  "failed_attempts": [],
+  "best_attempt": "attempt_01",
+  "human_review": "NOT_RUN",
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+  "mask_support": "NOT_APPLICABLE",
+  "attempt_records": [
+    {
+      "attempt": 1,
+      "success": true,
+      "attempt_dir": "runs/skill_series/EP03/attempt_01",
+      "result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-8e59b50b-04a8-4a0d-bfbe-110d75003b32",
+        "timestamp": "2026-09-05T10:16:25.156821+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/model_output.png",
+        "instruction": "Remove only the four distracting objects around the skincare product: loose charging cable, small paper card, small cup, and packaging fragment. Keep the exact bottle, bottle position, cap, label, lighting, background character, and framing unchanged. Do not redesign the product or invent any text.",
+        "mode": "skill_series",
+        "mask_path": null,
+        "seed": 7100,
+        "latency_seconds": 372.075,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP03/attempt_01/real-8e59b50b-04a8-4a0d-bfbe-110d75003b32.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "NOT_APPLICABLE"
+      }
+    }
+  ],
+  "extra": {
+    "mother": "Mother A / Product Master",
+    "clutter_elements": [
+      {
+        "name": "loose charging cable",
+        "bbox": [
+          55,
+          950,
+          345,
+          1260
+        ],
+        "approximate_region": "lower-left beside bottle",
+        "source": "deterministic PIL line/ellipse composition",
+        "color": "dark graphite"
+      },
+      {
+        "name": "small paper card",
+        "bbox": [
+          55,
+          680,
+          300,
+          885
+        ],
+        "approximate_region": "upper-left beside bottle",
+        "source": "deterministic PIL polygon composition",
+        "color": "cream paper with blue lines"
+      },
+      {
+        "name": "small cup",
+        "bbox": [
+          805,
+          970,
+          1015,
+          1235
+        ],
+        "approximate_region": "lower-right beside bottle",
+        "source": "deterministic PIL ellipse/rectangle composition",
+        "color": "muted teal"
+      },
+      {
+        "name": "packaging fragment",
+        "bbox": [
+          755,
+          700,
+          1015,
+          910
+        ],
+        "approximate_region": "upper-right beside bottle",
+        "source": "deterministic PIL polygon composition",
+        "color": "ochre cardboard"
+      }
+    ]
+  }
+}

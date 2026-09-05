@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-aa83ce1a-6b85-4736-bf96-854d55aecc0d",
+  "timestamp": "2026-09-05T10:22:38.211800+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/model_input.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/model_output.png",
+  "instruction": "Remove only the single declared red scratch on the bottle body. Preserve the bottle silhouette, cap, label, product position, background, lighting, and every unrelated region. Do not change any other object or add text. The reference mask identifies the repair region, but the installed MFlux interface may not support an explicit mask argument.",
+  "mode": "local_repair",
+  "mask_path": "/Users/jingdong/Downloads/skill diff project/data/controlled_variants/defect_mask.png",
+  "seed": 7100,
+  "latency_seconds": 371.473,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/real-aa83ce1a-6b85-4736-bf96-854d55aecc0d.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "MASK_NOT_SUPPORTED"
+}

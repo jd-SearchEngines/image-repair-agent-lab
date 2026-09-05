@@ -1,0 +1,55 @@
+{
+  "episode": "EP04",
+  "skill": "Local Repair",
+  "skill_version": "v1",
+  "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "success": true,
+  "attempts": 1,
+  "failed_attempts": [],
+  "best_attempt": "attempt_01",
+  "human_review": "NOT_RUN",
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+  "mask_support": "MASK_NOT_SUPPORTED",
+  "mask_change_proxy": {
+    "inside_mask_change": 0.08373647928237915,
+    "outside_mask_change_proxy": 0.047631267458200455,
+    "interpretation": "mean RGB delta proxy only; not a quality score"
+  },
+  "attempt_records": [
+    {
+      "attempt": 1,
+      "success": true,
+      "attempt_dir": "runs/skill_series/EP04/attempt_01",
+      "result": {
+        "provider": "local-mflux",
+        "model": "mlx-community/qwen-image-edit-2511-8bit",
+        "request_id": "real-aa83ce1a-6b85-4736-bf96-854d55aecc0d",
+        "timestamp": "2026-09-05T10:22:38.211800+00:00",
+        "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/model_input.png",
+        "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/model_output.png",
+        "instruction": "Remove only the single declared red scratch on the bottle body. Preserve the bottle silhouette, cap, label, product position, background, lighting, and every unrelated region. Do not change any other object or add text. The reference mask identifies the repair region, but the installed MFlux interface may not support an explicit mask argument.",
+        "mode": "local_repair",
+        "mask_path": "/Users/jingdong/Downloads/skill diff project/data/controlled_variants/defect_mask.png",
+        "seed": 7100,
+        "latency_seconds": 371.473,
+        "cost": null,
+        "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP04/attempt_01/real-aa83ce1a-6b85-4736-bf96-854d55aecc0d.raw.json",
+        "success": true,
+        "error": null,
+        "mask_support": "MASK_NOT_SUPPORTED"
+      }
+    }
+  ],
+  "extra": {
+    "mother": "Mother A / Product Master",
+    "defect": "single red scratch",
+    "defect_bbox": [
+      500,
+      690,
+      635,
+      770
+    ]
+  }
+}

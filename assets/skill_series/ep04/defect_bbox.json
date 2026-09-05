@@ -1,0 +1,14 @@
+{
+  "source_mother": "data/mother_cases/product/product_master_4x5.png",
+  "variant_path": "data/controlled_variants/product_defect_before.png",
+  "mask_path": "data/controlled_variants/defect_mask.png",
+  "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "defect": "single red scratch on bottle body",
+  "bbox": [
+    500,
+    690,
+    635,
+    770
+  ],
+  "method": "PIL deterministic renderer; model did not create the defect"
+}

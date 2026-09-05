@@ -1,0 +1,56 @@
+{
+  "source_mother": "data/mother_cases/product/product_master_4x5.png",
+  "variant_path": "data/controlled_variants/product_cluttered_before.png",
+  "input_type": "CONTROLLED_DETERMINISTIC_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "method": "PIL deterministic composition; no generative model used to create the defect",
+  "elements": [
+    {
+      "name": "loose charging cable",
+      "bbox": [
+        55,
+        950,
+        345,
+        1260
+      ],
+      "approximate_region": "lower-left beside bottle",
+      "source": "deterministic PIL line/ellipse composition",
+      "color": "dark graphite"
+    },
+    {
+      "name": "small paper card",
+      "bbox": [
+        55,
+        680,
+        300,
+        885
+      ],
+      "approximate_region": "upper-left beside bottle",
+      "source": "deterministic PIL polygon composition",
+      "color": "cream paper with blue lines"
+    },
+    {
+      "name": "small cup",
+      "bbox": [
+        805,
+        970,
+        1015,
+        1235
+      ],
+      "approximate_region": "lower-right beside bottle",
+      "source": "deterministic PIL ellipse/rectangle composition",
+      "color": "muted teal"
+    },
+    {
+      "name": "packaging fragment",
+      "bbox": [
+        755,
+        700,
+        1015,
+        910
+      ],
+      "approximate_region": "upper-right beside bottle",
+      "source": "deterministic PIL polygon composition",
+      "color": "ochre cardboard"
+    }
+  ]
+}
