@@ -1,0 +1,195 @@
+{
+  "experiment": "B",
+  "evidence_class": "SYNTHETIC_DETERMINISTIC_SIMULATOR",
+  "cases": [
+    {
+      "run_id": "EXP-B/case_00",
+      "case": {
+        "case_id": "case_00",
+        "source": "generated_controlled_fixture",
+        "source_type": "synthetic",
+        "instruction": "Repair the text issue while preserving all correct regions.",
+        "expected_issue_type": "TEXT",
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "defect_bbox": [
+          238,
+          174,
+          403,
+          242
+        ],
+        "fixture_dir": "data/cases/case_00",
+        "output_files": [
+          "before.png",
+          "clean.png",
+          "mask.png"
+        ],
+        "run_id": "fixture_generation"
+      },
+      "diagnosis": {
+        "case_id": "case_00",
+        "error_class": "TEXT",
+        "defect_bbox": [
+          238,
+          174,
+          403,
+          242
+        ],
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "confidence": 1.0,
+        "evidence": "fixture_metadata_declared_for_deterministic_simulator"
+      },
+      "routing": {
+        "strategy": "text_repair_local",
+        "scope": "local",
+        "rationale": "TEXT -> text_repair_local; preserve constraints are explicit"
+      },
+      "evidence_class": "SYNTHETIC_DETERMINISTIC_SIMULATOR",
+      "qa": {
+        "status": "PASS",
+        "repair_score": 1.0,
+        "preserve_change_rate": 0.0,
+        "preserve_score": 1.0,
+        "thresholds": {
+          "repair_score": 0.92,
+          "preserve_change_rate": 0.015
+        },
+        "qa_scope": "pixel_rule_on_synthetic_fixture"
+      },
+      "unnecessary_change_notes": "full regenerate changes all pixels; local route is evaluated outside the declared mask"
+    },
+    {
+      "run_id": "EXP-B/case_01",
+      "case": {
+        "case_id": "case_01",
+        "source": "generated_controlled_fixture",
+        "source_type": "synthetic",
+        "instruction": "Repair the fact issue while preserving all correct regions.",
+        "expected_issue_type": "FACT",
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "defect_bbox": [
+          228,
+          164,
+          413,
+          252
+        ],
+        "fixture_dir": "data/cases/case_01",
+        "output_files": [
+          "before.png",
+          "clean.png",
+          "mask.png"
+        ],
+        "run_id": "fixture_generation"
+      },
+      "diagnosis": {
+        "case_id": "case_01",
+        "error_class": "FACT",
+        "defect_bbox": [
+          228,
+          164,
+          413,
+          252
+        ],
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "confidence": 1.0,
+        "evidence": "fixture_metadata_declared_for_deterministic_simulator"
+      },
+      "routing": {
+        "strategy": "fact_repair_local",
+        "scope": "local",
+        "rationale": "FACT -> fact_repair_local; preserve constraints are explicit"
+      },
+      "evidence_class": "SYNTHETIC_DETERMINISTIC_SIMULATOR",
+      "qa": {
+        "status": "PASS",
+        "repair_score": 1.0,
+        "preserve_change_rate": 0.0,
+        "preserve_score": 1.0,
+        "thresholds": {
+          "repair_score": 0.92,
+          "preserve_change_rate": 0.015
+        },
+        "qa_scope": "pixel_rule_on_synthetic_fixture"
+      },
+      "unnecessary_change_notes": "full regenerate changes all pixels; local route is evaluated outside the declared mask"
+    },
+    {
+      "run_id": "EXP-B/case_02",
+      "case": {
+        "case_id": "case_02",
+        "source": "generated_controlled_fixture",
+        "source_type": "synthetic",
+        "instruction": "Repair the local_defect issue while preserving all correct regions.",
+        "expected_issue_type": "LOCAL_DEFECT",
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "defect_bbox": [
+          320,
+          110,
+          401,
+          191
+        ],
+        "fixture_dir": "data/cases/case_02",
+        "output_files": [
+          "before.png",
+          "clean.png",
+          "mask.png"
+        ],
+        "run_id": "fixture_generation"
+      },
+      "diagnosis": {
+        "case_id": "case_02",
+        "error_class": "LOCAL_DEFECT",
+        "defect_bbox": [
+          320,
+          110,
+          401,
+          191
+        ],
+        "preserve_constraints": [
+          "preserve product silhouette",
+          "preserve background outside defect",
+          "preserve correct text and color"
+        ],
+        "confidence": 1.0,
+        "evidence": "fixture_metadata_declared_for_deterministic_simulator"
+      },
+      "routing": {
+        "strategy": "local_inpaint",
+        "scope": "local",
+        "rationale": "LOCAL_DEFECT -> local_inpaint; preserve constraints are explicit"
+      },
+      "evidence_class": "SYNTHETIC_DETERMINISTIC_SIMULATOR",
+      "qa": {
+        "status": "PASS",
+        "repair_score": 1.0,
+        "preserve_change_rate": 0.0,
+        "preserve_score": 1.0,
+        "thresholds": {
+          "repair_score": 0.92,
+          "preserve_change_rate": 0.015
+        },
+        "qa_scope": "pixel_rule_on_synthetic_fixture"
+      },
+      "unnecessary_change_notes": "full regenerate changes all pixels; local route is evaluated outside the declared mask"
+    }
+  ]
+}

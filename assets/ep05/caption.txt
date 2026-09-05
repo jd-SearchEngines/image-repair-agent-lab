@@ -1,0 +1,1 @@
+EP05 hero: TEXT、FACT、LOCAL_DEFECT 和 GLOBAL_FAILURE 不应共用一个默认动作。

@@ -1,0 +1,506 @@
+{
+  "source_type": "synthetic",
+  "case_count": 20,
+  "cases": [
+    {
+      "case_id": "case_00",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the text issue while preserving all correct regions.",
+      "expected_issue_type": "TEXT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        238,
+        174,
+        403,
+        242
+      ],
+      "fixture_dir": "data/cases/case_00",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_01",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the fact issue while preserving all correct regions.",
+      "expected_issue_type": "FACT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        228,
+        164,
+        413,
+        252
+      ],
+      "fixture_dir": "data/cases/case_01",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_02",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the local_defect issue while preserving all correct regions.",
+      "expected_issue_type": "LOCAL_DEFECT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        320,
+        110,
+        401,
+        191
+      ],
+      "fixture_dir": "data/cases/case_02",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_03",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the composition issue while preserving all correct regions.",
+      "expected_issue_type": "COMPOSITION",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        126,
+        400
+      ],
+      "fixture_dir": "data/cases/case_03",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_04",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the background issue while preserving all correct regions.",
+      "expected_issue_type": "BACKGROUND",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        63
+      ],
+      "fixture_dir": "data/cases/case_04",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_05",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the global_failure issue while preserving all correct regions.",
+      "expected_issue_type": "GLOBAL_FAILURE",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        400
+      ],
+      "fixture_dir": "data/cases/case_05",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_06",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the text issue while preserving all correct regions.",
+      "expected_issue_type": "TEXT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        238,
+        174,
+        403,
+        242
+      ],
+      "fixture_dir": "data/cases/case_06",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_07",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the fact issue while preserving all correct regions.",
+      "expected_issue_type": "FACT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        228,
+        164,
+        413,
+        252
+      ],
+      "fixture_dir": "data/cases/case_07",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_08",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the local_defect issue while preserving all correct regions.",
+      "expected_issue_type": "LOCAL_DEFECT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        320,
+        110,
+        401,
+        191
+      ],
+      "fixture_dir": "data/cases/case_08",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_09",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the composition issue while preserving all correct regions.",
+      "expected_issue_type": "COMPOSITION",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        126,
+        400
+      ],
+      "fixture_dir": "data/cases/case_09",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_10",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the background issue while preserving all correct regions.",
+      "expected_issue_type": "BACKGROUND",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        63
+      ],
+      "fixture_dir": "data/cases/case_10",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_11",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the global_failure issue while preserving all correct regions.",
+      "expected_issue_type": "GLOBAL_FAILURE",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        400
+      ],
+      "fixture_dir": "data/cases/case_11",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_12",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the text issue while preserving all correct regions.",
+      "expected_issue_type": "TEXT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        238,
+        174,
+        403,
+        242
+      ],
+      "fixture_dir": "data/cases/case_12",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_13",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the fact issue while preserving all correct regions.",
+      "expected_issue_type": "FACT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        228,
+        164,
+        413,
+        252
+      ],
+      "fixture_dir": "data/cases/case_13",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_14",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the local_defect issue while preserving all correct regions.",
+      "expected_issue_type": "LOCAL_DEFECT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        320,
+        110,
+        401,
+        191
+      ],
+      "fixture_dir": "data/cases/case_14",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_15",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the composition issue while preserving all correct regions.",
+      "expected_issue_type": "COMPOSITION",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        126,
+        400
+      ],
+      "fixture_dir": "data/cases/case_15",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_16",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the background issue while preserving all correct regions.",
+      "expected_issue_type": "BACKGROUND",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        63
+      ],
+      "fixture_dir": "data/cases/case_16",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_17",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the global_failure issue while preserving all correct regions.",
+      "expected_issue_type": "GLOBAL_FAILURE",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        0,
+        0,
+        640,
+        400
+      ],
+      "fixture_dir": "data/cases/case_17",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_18",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the text issue while preserving all correct regions.",
+      "expected_issue_type": "TEXT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        238,
+        174,
+        403,
+        242
+      ],
+      "fixture_dir": "data/cases/case_18",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    },
+    {
+      "case_id": "case_19",
+      "source": "generated_controlled_fixture",
+      "source_type": "synthetic",
+      "instruction": "Repair the fact issue while preserving all correct regions.",
+      "expected_issue_type": "FACT",
+      "preserve_constraints": [
+        "preserve product silhouette",
+        "preserve background outside defect",
+        "preserve correct text and color"
+      ],
+      "defect_bbox": [
+        228,
+        164,
+        413,
+        252
+      ],
+      "fixture_dir": "data/cases/case_19",
+      "output_files": [
+        "before.png",
+        "clean.png",
+        "mask.png"
+      ],
+      "run_id": "fixture_generation"
+    }
+  ]
+}
