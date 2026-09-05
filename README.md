@@ -22,6 +22,7 @@ AI 图片坏掉时，直接追加一句 prompt 往往会把正确区域一起改
 
 ```bash
 python3 -m venv .venv
+.venv/bin/pip install -e '.[dev]'
 PYTHONPATH=src .venv/bin/python -m image_repair_lab.run_experiments --all
 PYTHONPATH=src .venv/bin/python -m pytest -q
 ```

@@ -17,7 +17,7 @@
 - `REAL_MODEL_NOT_RUN`: no model weights, GPU runtime, API response, raw provider trace, or cost record was available in this environment.
 - `HUMAN_REVIEW_NOT_RUN`: no blind human quality panel was performed.
 - `PRODUCTION_READY`: not claimed.
-- Initial `pip install -e '.[dev]'` on the system interpreter failed because the old pip/setuptools path attempted to write to a system-owned site-packages directory. The runner itself passed via `PYTHONPATH=src`; use a local venv for installation.
+- Initial editable installs on this macOS CommandLineTools Python failed because the bundled old pip/setuptools editable path attempted either a system-owned site-packages write or a venv subprocess without `pip`. The runner and tests pass via `PYTHONPATH=src`; the repository also includes standard `pyproject.toml` metadata and a CI workflow for a clean modern Python environment.
 
 ## Next gate
 
