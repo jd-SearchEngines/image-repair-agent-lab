@@ -1,0 +1,65 @@
+{
+  "case_id": "case_01",
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_CONTROLLED_SYNTHETIC_INPUT",
+  "full_regenerate": {
+    "provider_result": {
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "request_id": "real-feee50f8-c354-4f85-82da-90f497d6a1b1",
+      "timestamp": "2026-09-05T08:22:59.988777+00:00",
+      "input_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/before.png",
+      "output_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/full_regen.png",
+      "instruction": "Regenerate the entire image as a clean premium tea product image. Correct the wrong product fact on the label from COFFEE to TEA-01. Preserve the product identity, label geometry, background, colors, and all unrelated regions.",
+      "mode": "full_regenerate",
+      "mask_path": null,
+      "seed": 4103,
+      "latency_seconds": 188.735,
+      "cost": null,
+      "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/real-feee50f8-c354-4f85-82da-90f497d6a1b1.raw.json",
+      "success": true,
+      "error": null,
+      "mask_support": "NOT_APPLICABLE"
+    },
+    "evaluation": {
+      "rule_judge": "PIXEL_PROXY_ONLY_NOT_SEMANTIC",
+      "target_issue_fixed": "UNVERIFIED_NO_OCR_OR_VLM",
+      "target_region_similarity_to_declared_clean_fixture": 0.6658,
+      "unrelated_region_changed": 0.0434,
+      "product_identity_preserved": "UNVERIFIED_MANUAL_REVIEW_REQUIRED",
+      "layout_preserved": "UNVERIFIED_MANUAL_REVIEW_REQUIRED",
+      "text_preserved": "UNVERIFIED_OCR_NOT_RUN",
+      "obvious_new_artifact": "MANUAL_REVIEW_REQUIRED"
+    }
+  },
+  "local_repair": {
+    "provider_result": {
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "request_id": "real-c957212a-86ba-469f-9bf6-1a3aafd12b56",
+      "timestamp": "2026-09-05T08:26:08.722789+00:00",
+      "input_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/before.png",
+      "output_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/local_repair.png",
+      "instruction": "Correct the wrong product fact on the label from COFFEE to TEA-01. Preserve the product identity, label geometry, background, colors, and all unrelated regions.",
+      "mode": "local_repair",
+      "mask_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/mask.png",
+      "seed": 4203,
+      "latency_seconds": 191.558,
+      "cost": null,
+      "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_03/real-c957212a-86ba-469f-9bf6-1a3aafd12b56.raw.json",
+      "success": true,
+      "error": null,
+      "mask_support": "MASK_NOT_SUPPORTED"
+    },
+    "evaluation": {
+      "rule_judge": "PIXEL_PROXY_ONLY_NOT_SEMANTIC",
+      "target_issue_fixed": "UNVERIFIED_NO_OCR_OR_VLM",
+      "target_region_similarity_to_declared_clean_fixture": 0.6709,
+      "unrelated_region_changed": 0.0506,
+      "product_identity_preserved": "UNVERIFIED_MANUAL_REVIEW_REQUIRED",
+      "layout_preserved": "UNVERIFIED_MANUAL_REVIEW_REQUIRED",
+      "text_preserved": "UNVERIFIED_OCR_NOT_RUN",
+      "obvious_new_artifact": "MANUAL_REVIEW_REQUIRED"
+    }
+  },
+  "human_review": "NOT_RUN"
+}

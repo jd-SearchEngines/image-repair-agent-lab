@@ -1,0 +1,15 @@
+{
+  "case_id": "case_02",
+  "input_image": "CONTROLLED_SYNTHETIC_TEST_IMAGE",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "full_instruction": "Regenerate the entire image as a clean premium tea product image. Remove only the small red scratch artifact near the top of the tea package. Preserve the product silhouette, background, label, colors, and composition everywhere else.",
+  "local_instruction": "Remove only the small red scratch artifact near the top of the tea package. Preserve the product silhouette, background, label, colors, and composition everywhere else.",
+  "mask_path": "mask.png",
+  "mask_support_local": "MASK_NOT_SUPPORTED",
+  "preserve_constraints": [
+    "preserve product identity",
+    "preserve layout",
+    "preserve unrelated correct regions"
+  ]
+}

@@ -14,9 +14,7 @@ AI 图片坏掉时，直接追加一句 prompt 往往会把正确区域一起改
 
 ## 当前状态
 
-第一阶段已在本地执行：A/B/C/D 四组最小实验均有真实生成的 PNG、manifest、comparison board 和报告。当前实验使用受控 synthetic fixtures 与 deterministic simulator，因此这些结果只证明 pipeline / logging / preservation QA 的工程闭环，不证明任何生成模型的审美、文字能力或生产效果。
-
-真实生成模型接入为 `BLOCKED`：本环境未配置可验证的图像编辑模型权重/API。见 [reports/project_status.md](reports/project_status.md)。
+第一阶段已在本地执行：A/B/C/D 四组 synthetic 最小实验均有 PNG、manifest、comparison board 和报告；REAL-EP03 又用本地缓存的 Qwen Image Edit 真实跑了 3 个 case、6 个 treatment。真实输出仍来自受控 synthetic input，不能直接解释为生产质量。见 [reports/project_status.md](reports/project_status.md) 和 [reports/real_model_gate_01.md](reports/real_model_gate_01.md)。
 
 ## 快速开始
 

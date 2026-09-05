@@ -1,0 +1,15 @@
+{
+  "case_id": "case_00",
+  "input_image": "CONTROLLED_SYNTHETIC_TEST_IMAGE",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "full_instruction": "Regenerate the entire image as a clean premium tea product image. Replace the incorrect product label text TEA-?? with TEA-00. Preserve the label geometry, product silhouette, background, colors, and all unrelated regions.",
+  "local_instruction": "Replace the incorrect product label text TEA-?? with TEA-00. Preserve the label geometry, product silhouette, background, colors, and all unrelated regions.",
+  "mask_path": "mask.png",
+  "mask_support_local": "MASK_NOT_SUPPORTED",
+  "preserve_constraints": [
+    "preserve product identity",
+    "preserve layout",
+    "preserve unrelated correct regions"
+  ]
+}

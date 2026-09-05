@@ -1,0 +1,1 @@
+Real Qwen Image Edit on a controlled synthetic input: BEFORE / FULL REGENERATE / LOCAL REPAIR. Explicit mask unsupported by the installed CLI; preservation awaits human review.

@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-52c3d8fa-811a-4359-97a5-0cdee9703ea6",
+  "timestamp": "2026-09-05T08:13:13.037638+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_01/before.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_01/local_repair.png",
+  "instruction": "Remove only the small red scratch artifact near the top of the tea package. Preserve the product silhouette, background, label, colors, and composition everywhere else.",
+  "mode": "local_repair",
+  "mask_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_01/mask.png",
+  "seed": 4201,
+  "latency_seconds": 220.2,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_01/real-52c3d8fa-811a-4359-97a5-0cdee9703ea6.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "MASK_NOT_SUPPORTED"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-ed5c20f8-06fa-4b55-9c58-7a3fadd4a50a",
+  "timestamp": "2026-09-05T08:16:53.271804+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_02/before.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_02/full_regen.png",
+  "instruction": "Regenerate the entire image as a clean premium tea product image. Replace the incorrect product label text TEA-?? with TEA-00. Preserve the label geometry, product silhouette, background, colors, and all unrelated regions.",
+  "mode": "full_regenerate",
+  "mask_path": null,
+  "seed": 4102,
+  "latency_seconds": 194.302,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/REAL-EP03/case_02/real-ed5c20f8-06fa-4b55-9c58-7a3fadd4a50a.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "NOT_APPLICABLE"
+}
