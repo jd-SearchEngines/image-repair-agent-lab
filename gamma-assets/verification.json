@@ -1,0 +1,155 @@
+{
+  "asset_count": 30,
+  "verification": {
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/1_AI.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/2_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/3_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/4_Prompt-Skill.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/5_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep01/6_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/1_verify_hook.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/2_pytest_fail.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/3_replan_flow.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/4_pytest_pass.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/5_five_cases.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep02/6_verifier_conclusion.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/1_Demo.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/2_Demo.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/3_5-Cases-5.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/4_False-Finish5-0.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/5_Case.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep03/6_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/1_Pipeline.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/2_Compose.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/3_Assets.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/4_Compose-Assets.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/5_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep04/6_Workflow.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/1_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/2_Skill-Push.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/3_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/4_.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/5_Skill.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    },
+    "https://raw.githubusercontent.com/jd-SearchEngines/image-repair-agent-lab/main/gamma-assets/ep05/6_Loop-Engineering.png": {
+      "http_status": "PENDING",
+      "content_type": "PENDING",
+      "verified": false
+    }
+  }
+}
