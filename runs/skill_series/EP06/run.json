@@ -1,0 +1,51 @@
+{
+  "episode": "EP06",
+  "skill": "Cinematic Scene",
+  "skill_version": "v1",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+  "request": {
+    "episode": "EP06",
+    "family": "scene",
+    "mother_case": "scene_master_4x5.png",
+    "input_path": "runs/skill_series/EP06/before.png",
+    "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+    "skill": "Cinematic Scene",
+    "skill_version": "v1",
+    "skill_path": "skills/cinematic_scene/SKILL.md",
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "prompt": "Transform this daytime old cafe street into a believable cinematic rainy evening scene with wet-road reflections, warm window light, restrained neon, and filmic contrast. Preserve the same storefront geometry, yellow door, windows, street perspective, and building identity; do not replace the building.",
+    "attempt_budget": 3,
+    "attempt": 1,
+    "model_resolution": [
+      512,
+      640
+    ],
+    "content_resolution": [
+      1080,
+      1350
+    ]
+  },
+  "result": {
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "request_id": "real-cf7750bf-8b2c-474f-af83-011450c006c4",
+    "timestamp": "2026-09-05T09:49:11.218799+00:00",
+    "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/model_input.png",
+    "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/model_output.png",
+    "instruction": "Transform this daytime old cafe street into a believable cinematic rainy evening scene with wet-road reflections, warm window light, restrained neon, and filmic contrast. Preserve the same storefront geometry, yellow door, windows, street perspective, and building identity; do not replace the building.",
+    "mode": "skill_series",
+    "mask_path": null,
+    "seed": 7002,
+    "latency_seconds": 374.926,
+    "cost": null,
+    "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/real-cf7750bf-8b2c-474f-af83-011450c006c4.raw.json",
+    "success": true,
+    "error": null,
+    "mask_support": "NOT_APPLICABLE"
+  },
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+  "human_review": "NOT_RUN"
+}

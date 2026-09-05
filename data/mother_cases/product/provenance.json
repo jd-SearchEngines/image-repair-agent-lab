@@ -1,0 +1,23 @@
+{
+  "pexels_photo_id": "8533212",
+  "page_title": "Close Up shot of Cosmetic Product",
+  "photographer": "Hanna Pad",
+  "source_page_url": "https://www.pexels.com/photo/close-up-shot-of-cosmetic-product-8533212/",
+  "download_url": "https://images.pexels.com/photos/8533212/pexels-photo-8533212.jpeg?cs=srgb&dl=pexels-anna-nekrashevich-8533212.jpg&fm=jpg",
+  "source": "Pexels official page",
+  "license_page": "https://www.pexels.com/license/",
+  "license_observed_on_source_page": "Free to use",
+  "retrieval_date": "2026-09-05",
+  "original_path": "data/mother_cases/product/product_master_original.jpg",
+  "canonical_path": "data/mother_cases/product/product_master_4x5.png",
+  "original_size": [
+    3776,
+    5664
+  ],
+  "canonical_size": [
+    1080,
+    1350
+  ],
+  "canonical_transform": "crop + resize only; no generative modification",
+  "sha256": "3ba088727b599bb616391d5d92d8a000398fd53fc1aa47d1d0f79285de9ee542"
+}

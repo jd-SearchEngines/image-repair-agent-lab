@@ -1,0 +1,51 @@
+{
+  "episode": "EP05",
+  "skill": "Chinese Text Repair",
+  "skill_version": "v1",
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "input_type": "CONTROLLED_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+  "request": {
+    "episode": "EP05",
+    "family": "product",
+    "mother_case": "product_master_4x5.png",
+    "input_path": "runs/skill_series/EP05/before.png",
+    "input_type": "CONTROLLED_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+    "skill": "Chinese Text Repair",
+    "skill_version": "v1",
+    "skill_path": "skills/text_repair/SKILL.md",
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "prompt": "Correct only the Chinese promotion label from 秋季新口上市 to 秋季新品上市. Change only the text-safe label region. Preserve the exact product, bottle silhouette, background, layout, lighting, label geometry, and every unrelated pixel. Do not add claims.",
+    "attempt_budget": 3,
+    "attempt": 1,
+    "model_resolution": [
+      512,
+      640
+    ],
+    "content_resolution": [
+      1080,
+      1350
+    ]
+  },
+  "result": {
+    "provider": "local-mflux",
+    "model": "mlx-community/qwen-image-edit-2511-8bit",
+    "request_id": "real-836931e8-1b99-48ad-8c85-477955925343",
+    "timestamp": "2026-09-05T09:42:45.689379+00:00",
+    "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP05/model_input.png",
+    "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP05/model_output.png",
+    "instruction": "Correct only the Chinese promotion label from 秋季新口上市 to 秋季新品上市. Change only the text-safe label region. Preserve the exact product, bottle silhouette, background, layout, lighting, label geometry, and every unrelated pixel. Do not add claims.",
+    "mode": "skill_series",
+    "mask_path": null,
+    "seed": 7001,
+    "latency_seconds": 385.105,
+    "cost": null,
+    "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP05/real-836931e8-1b99-48ad-8c85-477955925343.raw.json",
+    "success": true,
+    "error": null,
+    "mask_support": "NOT_APPLICABLE"
+  },
+  "evidence_boundary": "REAL_MODEL_OUTPUT_ON_PEXELS_MOTHER_OR_CONTROLLED_VARIANT",
+  "human_review": "NOT_RUN"
+}

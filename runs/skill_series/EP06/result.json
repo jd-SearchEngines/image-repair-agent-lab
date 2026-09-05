@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-cf7750bf-8b2c-474f-af83-011450c006c4",
+  "timestamp": "2026-09-05T09:49:11.218799+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/model_input.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/model_output.png",
+  "instruction": "Transform this daytime old cafe street into a believable cinematic rainy evening scene with wet-road reflections, warm window light, restrained neon, and filmic contrast. Preserve the same storefront geometry, yellow door, windows, street perspective, and building identity; do not replace the building.",
+  "mode": "skill_series",
+  "mask_path": null,
+  "seed": 7002,
+  "latency_seconds": 374.926,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP06/real-cf7750bf-8b2c-474f-af83-011450c006c4.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "NOT_APPLICABLE"
+}

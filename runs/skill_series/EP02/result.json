@@ -1,0 +1,18 @@
+{
+  "provider": "local-mflux",
+  "model": "mlx-community/qwen-image-edit-2511-8bit",
+  "request_id": "real-5995e48c-a265-4443-a738-f3b9b220e6ce",
+  "timestamp": "2026-09-05T09:36:08.863218+00:00",
+  "input_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP02/model_input.png",
+  "output_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP02/model_output.png",
+  "instruction": "Turn this ordinary skincare product photo into a premium luxury studio advertisement. Improve studio lighting, controlled highlights, depth, and clean advertising background. Preserve the exact bottle silhouette, cap, proportions, physical product facts, and do not invent certification, ingredients, brand claims, or product text.",
+  "mode": "skill_series",
+  "mask_path": null,
+  "seed": 7000,
+  "latency_seconds": 396.347,
+  "cost": null,
+  "raw_metadata_path": "/Users/jingdong/Downloads/skill diff project/runs/skill_series/EP02/real-5995e48c-a265-4443-a738-f3b9b220e6ce.raw.json",
+  "success": true,
+  "error": null,
+  "mask_support": "NOT_APPLICABLE"
+}

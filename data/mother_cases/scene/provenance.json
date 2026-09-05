@@ -1,0 +1,23 @@
+{
+  "pexels_photo_id": "4995025",
+  "page_title": "Exterior of old cafe on street",
+  "photographer": "Lisa Fotios",
+  "source_page_url": "https://www.pexels.com/photo/exterior-of-old-cafe-on-street-4995025/",
+  "download_url": "https://images.pexels.com/photos/4995025/pexels-photo-4995025.jpeg?cs=srgb&dl=pexels-fotios-photos-4995025.jpg&fm=jpg",
+  "source": "Pexels official page",
+  "license_page": "https://www.pexels.com/license/",
+  "license_observed_on_source_page": "Free to use",
+  "retrieval_date": "2026-09-05",
+  "original_path": "data/mother_cases/scene/scene_master_original.jpg",
+  "canonical_path": "data/mother_cases/scene/scene_master_4x5.png",
+  "original_size": [
+    3448,
+    4592
+  ],
+  "canonical_size": [
+    1080,
+    1350
+  ],
+  "canonical_transform": "crop + resize only; no generative modification",
+  "sha256": "6e2705ffd2df36858fbebe0836cc72d05bb866652705c16741d648b5115dd97f"
+}

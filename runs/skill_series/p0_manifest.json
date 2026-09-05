@@ -1,0 +1,48 @@
+{
+  "series": "AI修图 Skill 实验室",
+  "gate": "P0",
+  "same_model": "mlx-community/qwen-image-edit-2511-8bit",
+  "same_families": [
+    "Product Master",
+    "Scene Master"
+  ],
+  "cases": [
+    {
+      "episode": "EP02",
+      "skill": "Hero Product",
+      "success": true,
+      "attempts": 1,
+      "run_dir": "runs/skill_series/EP02",
+      "skill_path": "skills/hero_product/SKILL.md",
+      "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "failed_attempts": []
+    },
+    {
+      "episode": "EP05",
+      "skill": "Chinese Text Repair",
+      "success": true,
+      "attempts": 1,
+      "run_dir": "runs/skill_series/EP05",
+      "skill_path": "skills/text_repair/SKILL.md",
+      "input_type": "CONTROLLED_VARIANT_DERIVED_FROM_PEXELS_MOTHER",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "failed_attempts": []
+    },
+    {
+      "episode": "EP06",
+      "skill": "Cinematic Scene",
+      "success": true,
+      "attempts": 1,
+      "run_dir": "runs/skill_series/EP06",
+      "skill_path": "skills/cinematic_scene/SKILL.md",
+      "input_type": "PEXELS_CANONICAL_MOTHER_IMAGE",
+      "provider": "local-mflux",
+      "model": "mlx-community/qwen-image-edit-2511-8bit",
+      "failed_attempts": []
+    }
+  ],
+  "human_review": "NOT_RUN"
+}

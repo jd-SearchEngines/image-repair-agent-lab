@@ -1,0 +1,13 @@
+{
+  "wrong_text": "秋季新口上市",
+  "correct_text": "秋季新品上市",
+  "text_bbox": [
+    150,
+    1040,
+    930,
+    1240
+  ],
+  "source": "deterministic PIL renderer",
+  "input_type": "CONTROLLED_SYNTHETIC_TEST_VARIANT",
+  "mother_case": "product_master_4x5.png"
+}

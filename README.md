@@ -14,7 +14,7 @@ AI 图片坏掉时，直接追加一句 prompt 往往会把正确区域一起改
 
 ## 当前状态
 
-第一阶段已在本地执行：A/B/C/D 四组 synthetic 最小实验均有 PNG、manifest、comparison board 和报告；REAL-EP03 又用本地缓存的 Qwen Image Edit 真实跑了 3 个 case、6 个 treatment。真实输出仍来自受控 synthetic input，不能直接解释为生产质量。见 [reports/project_status.md](reports/project_status.md) 和 [reports/real_model_gate_01.md](reports/real_model_gate_01.md)。
+第一阶段已在本地执行：A/B/C/D 四组 synthetic 最小实验均有 PNG、manifest、comparison board 和报告；REAL-EP03 用本地缓存的 Qwen Image Edit 真实跑了 3 个 case、6 个 treatment；同系列 P0 又锁定两张 Pexels Mother Image，并完成 EP02/EP05/EP06 各 1 次真实模型 canonical run。真实输出仍来自受控 mother image/variant，不能直接解释为生产质量；人工评审、OCR 与结构化 judge 尚未运行。见 [reports/project_status.md](reports/project_status.md)、[reports/real_model_gate_01.md](reports/real_model_gate_01.md) 和 [reports/skill_series_content_evidence.md](reports/skill_series_content_evidence.md)。
 
 ## 快速开始
 
